@@ -336,7 +336,7 @@ footer {
 
 .cv-btn {
   display: block;
-  margin: 40px auto;
+  margin: 40px auto 10px;
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
@@ -363,7 +363,98 @@ footer {
   font-size: 0.9em;
 }
 
-/* Mobile styles */
+#projects h1 {
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-size: 3.5rem;
+}
+
+#project-section {
+  background-color: var(--theme-color3);
+}
+
+#project-header {
+  text-align: center;
+}
+
+#project-subtitle {
+  font-size: 1.5rem;
+}
+
+#divider {
+  width: 60%;
+  height: 5px;
+  background-color: var(--theme-color3);
+  margin: -15px auto 0;
+}
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-card {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 5px 15px rgba(0, 56, 61, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 56, 61, 0.9), transparent);
+  color: white;
+  padding: 30px 20px 20px;
+  text-align: center;
+}
+
+.project-overlay h3 {
+  margin: 0 0 15px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  background-color: var(--theme-color1);
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.github-link:hover {
+  background-color: var(--theme-color2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fab.fa-github {
+  font-size: 1.2rem;
+}
+
 @media (max-width: 768px) {
   header {
     width: 100%;

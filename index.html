@@ -6,21 +6,22 @@
     <title>eugene-ambagwa</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="images/_logo designs.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <!--logo-->
       <img src="images/image.svg" id="header-image" alt="Eugene's logo" />
 
-      <!--Toggle button for phone screens-->
       <button id="navbar-toggle" class="navbar-toggle">☰</button>
 
       <nav id="navbar">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="projects">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
@@ -135,7 +136,108 @@
       </div>
     </section>
 
-    <section id="projects"></section>
+    <section id="projects">
+      <div id="project-header">
+        <h1>My <span class="highlight">Projects</span></h1>
+        <p id="project-subtitle">Projects worked on and their repositories</p>
+        <div id="divider"></div>
+      </div>
+
+      <div id="projects-container">
+        <div
+          class="project-card"
+          style="
+            background-image: url(images/portfolio-image1.jpg);
+            object-fit: cover;
+          "
+        >
+          <div class="project-overlay">
+            <h3>Model portfolio</h3>
+            <a
+              href="https://github.com/ambagwa/model-portfolio"
+              class="github-link"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i> View code
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="project-card"
+          style="background-image: url(images/portfolio-image2.jpg)"
+        >
+          <div class="project-overlay">
+            <h3>Telephone Number Converter</h3>
+            <a
+              href="https://github.com/ambagwa/100-Days-Of-Code/tree/main/telephone-number-validator"
+              class="github-link"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i> View code
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="project-card"
+          style="background-image: url(images/portfolio-image3.jpg)"
+        >
+          <div class="project-overlay">
+            <h3>Weather App</h3>
+            <a
+              href="https://github.com/ambagwa/100-Days-Of-Code/tree/main/myWeatherApp"
+              class="github-link"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i> View code
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="project-card"
+          style="background-image: url(images/portfolio-image4.jpg)"
+        >
+          <div class="project-overlay">
+            <h3>Book Inventory</h3>
+            <a
+              href="https://github.com/ambagwa/100-Days-Of-Code/tree/main/book_inventory_management"
+              class="github-link"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i> View code
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="project-card"
+          style="background-image: url(images/portfolio-image5.jpg)"
+        >
+          <div class="project-overlay">
+            <h3>Pokemon App</h3>
+            <a
+              href="https://github.com/ambagwa/100-Days-Of-Code/tree/main/pokemon_app"
+              class="github-link"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i> View code
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="project-card"
+          style="background-image: url(images/portfolio-image6.jpg)"
+        >
+          <div class="project-overlay">
+            <h3>News App</h3>
+            <a
+              href="https://github.com/ambagwa/100-Days-Of-Code/tree/main/simple_news_aggregator"
+              class="github-link"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i> View code
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="contacts"></section>
 
