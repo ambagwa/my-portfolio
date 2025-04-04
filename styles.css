@@ -16,6 +16,7 @@ header {
   background-color: var(--theme-color4);
   width: 70%;
   margin: 5px auto 0;
+  z-index: 1000;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -358,12 +359,12 @@ footer {
   transform: translateY(0);
 }
 
-/* Font Awesome Icon */
 .cv-btn i {
   font-size: 0.9em;
 }
 
-#projects h1 {
+#projects h1,
+#contacts h1 {
   text-align: center;
   margin: 0 0 20px 0;
   font-size: 3.5rem;
@@ -373,11 +374,13 @@ footer {
   background-color: var(--theme-color3);
 }
 
-#project-header {
+#project-header,
+#contacts-header {
   text-align: center;
 }
 
-#project-subtitle {
+#project-subtitle,
+#contacts-subtitle {
   font-size: 1.5rem;
 }
 
@@ -453,6 +456,101 @@ footer {
 
 .fab.fa-github {
   font-size: 1.2rem;
+}
+
+#contacts {
+  margin-top: 50px;
+}
+
+#contacts-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#left-contacts {
+  background-color: var(--theme-color4);
+  border-radius: 10px;
+}
+
+#left-contacts h3,
+#right-contacts h3 {
+  text-align: center;
+  background-color: var(--theme-color1);
+  padding: 5px;
+}
+
+#left-contacts ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 5px;
+}
+
+#left-contacts li {
+  font-size: 1em;
+  color: #333;
+  padding: 8px 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+#left-contacts li:last-child {
+  border-bottom: none;
+}
+
+#right-contacts {
+  background-color: var(--theme-color4);
+  border-radius: 15px;
+}
+
+#right-contacts ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 70%;
+}
+
+#right-contacts a {
+  padding: 10px;
+  display: block;
+  color: var(--theme-color2);
+  border-radius: 5px;
+  margin: 2px 0;
+  text-decoration: none;
+  background-color: var(--theme-color3);
+}
+
+#right-contacts a:hover {
+  color: #fff;
+  background-color: var(--theme-color2);
+}
+
+#email-container {
+  background-color: var(--theme-color4);
+  margin: 10px auto;
+  width: 75%;
+  padding: 20px;
+}
+
+#email-container form * {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form button {
+background-color: var(--theme-color3);
+}
+
+form button:hover {
+    background-color: var(--theme-color2);
+    color: white;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -538,5 +636,9 @@ footer {
 
   .skills-gained {
     gap: 8px;
+  }
+
+  #contacts-body {
+    grid-template-columns: 1fr; 
   }
 }
