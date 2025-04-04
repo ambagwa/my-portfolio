@@ -44,17 +44,19 @@ A responsive personal portfolio website to showcase my skills, projects, educati
 
 3. Launch in your browser:
 
-Open index.html in Chrome/Firefox/Edge.
+    Open index.html in Chrome/Firefox/Edge.
 
-## Project Structure
-my-portfolio/
-├── index.html          # Main HTML file
-├── styles.css          # All CSS styles
-├── script.js           # JavaScript for interactivity
-├── images/             # All project images
-│   ├── _logo designs.png
-│   ├── image1.jpg      # Landing page image
-│   └── ...
-├── files/              # Additional files (e.g., CV)
-│   └── cv.pdf
-└── README.md           # This file
+## 📂 Project Structure  
+```plaintext
+my-portfolio/  
+├── index.html          # Main HTML file  
+├── styles.css          # All CSS styles  
+├── script.js           # Interactive elements (e.g., navbar toggle)  
+├── images/             # All assets  
+│   ├── _logo designs.png  
+│   ├── image1.jpg      # Landing page photo  
+│   ├── image2.png      # About section photo  
+│   └── ...  
+├── files/              # Additional docs  
+│   └── cv.pdf          # Downloadable resume  
+└── README.md           # Project documentation  
