@@ -6,7 +6,7 @@
 
 A responsive personal portfolio website to showcase my skills, projects, education, and contact information.  
 
-🔗 **Live Demo:** [https://ambagwa.github.io/my-portfolio](https://ambagwa.github.io/my-portfolio) *(Replace with your actual link)*  
+🔗 **Live Demo:** [https://ambagwa.github.io/my-portfolio/](https://ambagwa.github.io/my-portfolio/)   
 
 ---
 

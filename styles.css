@@ -506,7 +506,7 @@ footer {
 
 #right-contacts ul {
   list-style-type: none;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   padding: 0;
   width: 70%;
 }
