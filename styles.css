@@ -1,17 +1,20 @@
+/* CSS Variables for consistent theming */
 :root {
-  --theme-color1: #e29578;
-  --theme-color2: #00383d;
-  --theme-color3: #83c5be;
-  --theme-color4: #edf6f9;
-  --theme-color5: #ffc2ad;
+  --theme-color1: #e29578;  /* Primary accent color (peach) */
+  --theme-color2: #00383d;  /* Dark teal for text/backgrounds */
+  --theme-color3: #83c5be;  /* Light teal for secondary elements */
+  --theme-color4: #edf6f9;  /* Off-white for backgrounds */
+  --theme-color5: #ffc2ad;  /* Light peach for accents */
 }
 
+/* Base styles */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Header styles */
 header {
   background-color: var(--theme-color4);
   width: 70%;
@@ -21,16 +24,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  position: sticky;  /* Makes header stick to top when scrolling */
   top: 0;
   padding: 10px 20px;
 }
 
+/* Logo image in header */
 #header-image {
   height: 80px;
   width: 80px;
 }
 
+/* Navigation styles */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -47,6 +52,7 @@ nav a {
   border-radius: 5px;
 }
 
+/* Navigation hover and active states */
 nav a:hover {
   background-color: var(--theme-color2);
   color: white;
@@ -57,6 +63,7 @@ nav a.active {
   color: white;
 }
 
+/* Mobile menu toggle button (hidden by default) */
 #navbar-toggle {
   display: none;
   background-color: transparent;
@@ -67,21 +74,19 @@ nav a.active {
   margin-left: auto;
 }
 
+/* Landing/Hero section */
 #landing-page {
   width: 80%;
   margin: 20px auto 50px;
   border-radius: 10px;
   padding: 20px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;  /* Two column layout */
   justify-content: center;
   align-items: center;
 }
 
-#landing-page div {
-  text-align: center;
-}
-
+/* Landing page text styles */
 #landing-text h1 {
   font-size: 3.5em;
 }
@@ -90,10 +95,12 @@ nav a.active {
   font-size: 1.2em;
 }
 
+/* Accent color for name */
 #ambagwa {
   color: var(--theme-color3);
 }
 
+/* Call-to-action button */
 #landing-text a {
   text-decoration: none;
   color: var(--theme-color2);
@@ -110,6 +117,7 @@ nav a.active {
   color: white;
 }
 
+/* Profile image in landing section */
 #landing-image {
   width: 80%;
   height: auto;
@@ -117,16 +125,19 @@ nav a.active {
   box-shadow: 0 4px 8px var(--theme-color2), 0 8px 16px rgba(0, 56, 61, 0.1);
 }
 
+/* Footer styles */
 footer {
   text-align: center;
 }
 
+/* About section */
 .about-section {
   background-color: var(--theme-color4);
   padding: 60px 0;
   margin: 40px 0;
 }
 
+/* About section heading */
 #about h1 {
   font-size: 3.5em;
   text-align: center;
@@ -137,6 +148,7 @@ footer {
   color: var(--theme-color1);
 }
 
+/* About content layout */
 .about-container {
   width: 80%;
   margin: 0 auto;
@@ -146,6 +158,7 @@ footer {
   align-items: center;
 }
 
+/* Stacked image effect */
 .about-image {
   display: grid;
   grid-template-areas: "stack";
@@ -159,6 +172,7 @@ footer {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Positioning for stacked images */
 .image-two {
   margin-right: 20%;
   z-index: 1;
@@ -170,6 +184,7 @@ footer {
   z-index: 2;
 }
 
+/* About text styles */
 .intro-text {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -177,6 +192,7 @@ footer {
   color: var(--theme-color2);
 }
 
+/* Details grid in about section */
 .about-details {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -194,6 +210,7 @@ footer {
   line-height: 1.5;
 }
 
+/* Connect button in about section */
 .about-btn {
   display: inline-block;
   padding: 12px 30px;
@@ -211,11 +228,13 @@ footer {
   box-shadow: 0 5px 15px rgba(0, 56, 61, 0.2);
 }
 
+/* Education section */
 .education-section {
   padding: 80px 0;
   color: var(--theme-color2);
 }
 
+/* Section header styles */
 .section-header {
   text-align: center;
   margin-bottom: 50px;
@@ -235,6 +254,7 @@ footer {
   font-size: 1.1rem;
 }
 
+/* Timeline styles */
 .education-timeline {
   max-width: 800px;
   z-index: -1;
@@ -243,6 +263,7 @@ footer {
   padding-left: 30px;
 }
 
+/* Vertical line in timeline */
 .education-timeline::before {
   content: "";
   position: absolute;
@@ -253,12 +274,14 @@ footer {
   background: var(--theme-color2);
 }
 
+/* Timeline items */
 .education-item {
   position: relative;
   margin-bottom: 40px;
   padding-left: 30px;
 }
 
+/* Dots on timeline */
 .education-item::before {
   content: "";
   position: absolute;
@@ -277,6 +300,7 @@ footer {
   margin-bottom: 5px;
 }
 
+/* Education content cards */
 .education-content {
   background: var(--theme-color4);
   padding: 25px;
@@ -300,6 +324,7 @@ footer {
   margin-bottom: 15px;
 }
 
+/* Skills tags */
 .skills-gained {
   display: flex;
   flex-wrap: wrap;
@@ -315,6 +340,7 @@ footer {
   font-size: 0.8rem;
 }
 
+/* Certificate link */
 .certificate-link {
   display: block;
   margin-top: 15px;
@@ -329,6 +355,7 @@ footer {
   text-decoration: underline;
 }
 
+/* CV download button container */
 #download-container {
   display: flex;
   flex-direction: column;
@@ -363,6 +390,7 @@ footer {
   font-size: 0.9em;
 }
 
+/* Projects and contacts section headings */
 #projects h1,
 #contacts h1 {
   text-align: center;
@@ -384,6 +412,7 @@ footer {
   font-size: 1.5rem;
 }
 
+/* Section divider */
 #divider {
   width: 60%;
   height: 5px;
@@ -391,6 +420,7 @@ footer {
   margin: -15px auto 0;
 }
 
+/* Projects grid */
 #projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -401,6 +431,7 @@ footer {
   padding: 20px;
 }
 
+/* Project cards */
 .project-card {
   position: relative;
   height: 300px;
@@ -418,6 +449,7 @@ footer {
   transform: translateY(-10px);
 }
 
+/* Project overlay on hover */
 .project-overlay {
   position: absolute;
   bottom: 0;
@@ -435,6 +467,7 @@ footer {
   color: white;
 }
 
+/* GitHub link in projects */
 .github-link {
   display: inline-flex;
   align-items: center;
@@ -458,10 +491,12 @@ footer {
   font-size: 1.2rem;
 }
 
+/* Contacts section */
 #contacts {
   margin-top: 50px;
 }
 
+/* Two-column contact layout */
 #contacts-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -470,6 +505,7 @@ footer {
   margin: 0 auto;
 }
 
+/* Left contact info panel */
 #left-contacts {
   background-color: var(--theme-color4);
   border-radius: 10px;
@@ -499,6 +535,7 @@ footer {
   border-bottom: none;
 }
 
+/* Right contact (social media) panel */
 #right-contacts {
   background-color: var(--theme-color4);
   border-radius: 15px;
@@ -526,6 +563,7 @@ footer {
   background-color: var(--theme-color2);
 }
 
+/* Contact form */
 #email-container {
   background-color: var(--theme-color4);
   margin: 10px auto;
@@ -544,15 +582,16 @@ footer {
 }
 
 form button {
-background-color: var(--theme-color3);
+  background-color: var(--theme-color3);
 }
 
 form button:hover {
-    background-color: var(--theme-color2);
-    color: white;
-    cursor: pointer;
+  background-color: var(--theme-color2);
+  color: white;
+  cursor: pointer;
 }
 
+/* Mobile responsive styles */
 @media (max-width: 768px) {
   header {
     width: 100%;
@@ -566,6 +605,7 @@ form button:hover {
     width: 60px;
   }
 
+  /* Show mobile menu button */
   #navbar-toggle {
     display: block;
   }
@@ -593,6 +633,7 @@ form button:hover {
     margin: 2px 0;
   }
 
+  /* Stack landing page content */
   #landing-page {
     width: 90%;
     grid-template-columns: 1fr;
@@ -608,6 +649,7 @@ form button:hover {
     display: flex;
   }
 
+  /* Stack about section content */
   .about-container {
     grid-template-columns: 1fr;
     width: 90%;
@@ -622,6 +664,7 @@ form button:hover {
     grid-template-columns: 1fr;
   }
 
+  /* Adjust timeline for mobile */
   .education-timeline {
     padding-left: 20px;
   }
@@ -638,6 +681,7 @@ form button:hover {
     gap: 8px;
   }
 
+  /* Stack contact columns */
   #contacts-body {
     grid-template-columns: 1fr; 
   }

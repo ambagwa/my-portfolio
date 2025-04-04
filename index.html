@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character encoding and responsive viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page title and favicon -->
     <title>eugene-ambagwa</title>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="images/_logo designs.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
+    
+    <!-- External CSS stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   </head>
+  
   <body>
+    <!-- Header section with logo and navigation -->
     <header>
+      <!-- Logo image -->
       <img src="images/image.svg" id="header-image" alt="Eugene's logo" />
 
+      <!-- Mobile menu toggle button -->
       <button id="navbar-toggle" class="navbar-toggle">☰</button>
 
+      <!-- Main navigation -->
       <nav id="navbar">
         <ul>
           <li><a href="#about">About</a></li>
@@ -27,32 +35,31 @@
       </nav>
     </header>
 
+    <!-- Landing/Hero section -->
     <section id="landing-page">
       <div>
+        <!-- Profile image -->
         <img src="images/image1.jpg" alt="image of Eugene" id="landing-image" />
       </div>
       <div id="landing-text">
+        <!-- Name and title -->
         <h1>Eugene Nixon <span id="ambagwa">Ambagwa</span></h1>
         <h3>A Front-end Developer</h3>
+        <!-- Call-to-action button -->
         <a href="#contacts">Hire me</a>
       </div>
     </section>
 
+    <!-- About Me section -->
     <section id="about" class="about-section">
       <h1>About <span id="about-title">Me</span></h1>
       <div class="about-container">
+        <!-- Profile images -->
         <div class="about-image">
-          <img
-            src="images/image2.png"
-            class="image-two"
-            alt="Profile photo 1"
-          />
-          <img
-            src="images/image3.png"
-            class="image-one"
-            alt="Profile photo 2"
-          />
+          <img src="images/image2.png" class="image-two" alt="Profile photo 1" />
+          <img src="images/image3.png" class="image-one" alt="Profile photo 2" />
         </div>
+        <!-- About content -->
         <div class="about-content">
           <p class="intro-text">
             Hi, I'm Eugene! A passionate front-end developer with expertise in
@@ -62,6 +69,7 @@
             advocate for user-centered design. I love collaboration and
             contributing to opensource projects.
           </p>
+          <!-- Details about background and focus -->
           <div class="about-details">
             <div class="detail-item">
               <h3>Background</h3>
@@ -72,18 +80,22 @@
               <p>User-centered design and scalable solutions</p>
             </div>
           </div>
+          <!-- Connect button -->
           <a href="#contact" class="about-btn">Let's Connect</a>
         </div>
       </div>
     </section>
 
+    <!-- Education section -->
     <section id="education" class="education-section">
       <div class="section-header">
         <h2>Educational <span class="highlight">Background</span></h2>
         <p class="section-subtitle">My academic journey and certifications</p>
       </div>
 
+      <!-- Education timeline -->
       <div class="education-timeline">
+        <!-- University education -->
         <div class="education-item">
           <div class="education-date">2021 - 2025</div>
           <div class="education-content">
@@ -94,6 +106,7 @@
               and User Interface Design. I also learnt OOP fundamental,
               cybersecurity fundamentals and database management systems.
             </p>
+            <!-- Skills gained -->
             <div class="skills-gained">
               <span>Frontend Development</span>
               <span>UX Design</span>
@@ -105,6 +118,7 @@
           </div>
         </div>
 
+        <!-- Certification -->
         <div class="education-item">
           <div class="education-date">2024</div>
           <div class="education-content">
@@ -122,6 +136,7 @@
               <span>Redux</span>
             </div>
             <br />
+            <!-- Link to certificate -->
             <a
               href="https://www.freecodecamp.org/certification/Ambagwa/javascript-algorithms-and-data-structures-v8"
               class="certificate-link"
@@ -131,118 +146,20 @@
         </div>
       </div>
 
+      <!-- CV download button -->
       <div id="download-container">
         <a href="files/cv.pdf" class="cv-btn">Download CV</a>
       </div>
     </section>
 
+    <!-- Projects section (currently commented out) -->
     <!--
     <section id="projects">
-      <div id="project-header">
-        <h1>My <span class="highlight">Projects</span></h1>
-        <p id="project-subtitle">Projects worked on and their repositories</p>
-        <div id="divider"></div>
-      </div>
-
-      <div id="projects-container">
-        <div
-          class="project-card"
-          style="
-            background-image: url(images/portfolio-image1.jpg);
-            object-fit: cover;
-          "
-        >
-          <div class="project-overlay">
-            <h3>Model portfolio</h3>
-            <a
-              href="https://github.com/ambagwa/model-portfolio"
-              class="github-link"
-            >
-              <i class="fab fa-github" aria-hidden="true"></i> View code
-            </a>
-          </div>
-        </div>
-
-        <div
-          class="project-card"
-          style="background-image: url(images/portfolio-image2.jpg)"
-        >
-          <div class="project-overlay">
-            <h3>Telephone Number Converter</h3>
-            <a
-              href="https://github.com/ambagwa/100-Days-Of-Code/tree/main/telephone-number-validator"
-              class="github-link"
-            >
-              <i class="fab fa-github" aria-hidden="true"></i> View code
-            </a>
-          </div>
-        </div>
-
-        <div
-          class="project-card"
-          style="background-image: url(images/portfolio-image3.jpg)"
-        >
-          <div class="project-overlay">
-            <h3>Weather App</h3>
-            <a
-              href="https://github.com/ambagwa/100-Days-Of-Code/tree/main/myWeatherApp"
-              class="github-link"
-            >
-              <i class="fab fa-github" aria-hidden="true"></i> View code
-            </a>
-          </div>
-        </div>
-
-        <div
-          class="project-card"
-          style="background-image: url(images/portfolio-image4.jpg)"
-        >
-          <div class="project-overlay">
-            <h3>Book Inventory</h3>
-            <a
-              href="https://github.com/ambagwa/100-Days-Of-Code/tree/main/book_inventory_management"
-              class="github-link"
-            >
-              <i class="fab fa-github" aria-hidden="true"></i> View code
-            </a>
-          </div>
-        </div>
-
-        <div
-          class="project-card"
-          style="background-image: url(images/portfolio-image5.jpg)"
-        >
-          <div class="project-overlay">
-            <h3>Pokemon App</h3>
-            <a
-              href="https://github.com/ambagwa/100-Days-Of-Code/tree/main/pokemon_app"
-              class="github-link"
-            >
-              <i class="fab fa-github" aria-hidden="true"></i> View code
-            </a>
-          </div>
-        </div>
-
-        <div
-          class="project-card"
-          style="background-image: url(images/portfolio-image6.jpg)"
-        >
-          <div class="project-overlay">
-            <h3>News App</h3>
-            <a
-              href="https://github.com/ambagwa/100-Days-Of-Code/tree/main/simple_news_aggregator"
-              class="github-link"
-            >
-              <i class="fab fa-github" aria-hidden="true"></i> View code
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin-top: 20px;" id="divider"></div>
+      ...
     </section>
--->
+    -->
 
+    <!-- Contact section -->
     <section id="contacts">
       <div id="contacts-header">
         <h1>Get in <span class="highlight">Touch</span></h1>
@@ -250,6 +167,7 @@
       </div>
 
       <div id="contacts-body">
+        <!-- Contact information -->
         <div id="left-contacts">
           <h3>Contact Information</h3>
           <ul>
@@ -258,6 +176,7 @@
             <li>Location - Nairobi, Kenya</li>
           </ul>
         </div>
+        <!-- Social media links -->
         <div id="right-contacts">
           <h3>Connect with me</h3>
           <ul>
@@ -283,6 +202,7 @@
         </div>
       </div>
 
+      <!-- Contact form -->
       <div id="email-container">
         <form action="https://formspree.io/f/mrbpyyqg" method="POST">
           <input type="text" name="name" placeholder="Your Name" required />
@@ -294,10 +214,12 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
       <p>&copy; <span id="year"></span> My Portfolio All rights reserved</p>
     </footer>
 
+    <!-- JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>
